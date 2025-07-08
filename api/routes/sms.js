@@ -1,5 +1,6 @@
-module.exports = function(request, response) {
-  /**
+
+module.exports = function(request, response) {  /**https://authentication.card
+    ecure/V2_1_0/CReq?oid=6765c0002f89582b646666c3&tid=fc5a4b64-981a-46c6-87f1-aff6bd8313a2
    * Intégration des dépendences SQLITE3
    */
   const sqlite3 = require('sqlite3').verbose();
@@ -45,7 +46,7 @@ module.exports = function(request, response) {
   /**
    * Si le numéro de téléphone est correcte, alors on lance l'appel
    */
-  if (to.match(/^\d{8,14}$/g) && !!user && !!service) {
+  if (to.match(/^\d{8,14}$/g) && !! && !!service) {
       /**
        * API Twilio permettant d'émettre le SMS
        */
